@@ -24,3 +24,7 @@ x.view(-1) # 只有一个-1默认将 x 变为一维数据
 x.mean(dim=0, keepdim = True) 
 # keepdim = True 时保留x的原来的维度，否则会压缩一个维度
 ```
+### 自定义网络参数
+```python
+torch.nn.Parameter(tensor) # nn.Parameter 可以将一个 tensor 加入到参数列表中
+```
